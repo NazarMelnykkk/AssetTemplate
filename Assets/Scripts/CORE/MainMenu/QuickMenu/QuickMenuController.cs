@@ -3,7 +3,7 @@ using UnityEngine;
 public class QuickMenuController : MonoBehaviour
 {
     [SerializeField] private UIContainerController _uIContainerController;
-    private InputActionConfig _config;
+    private InputActionConfigBase _config;
 
     private void OnEnable()
     {

@@ -593,7 +593,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 282dba95b3e8e4e4c86fa3a54883b745, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  InputActions:
+  <InputActions>k__BackingField:
   - {fileID: 11400000, guid: 2756e544769692743b2577e0fa2cb9dd, type: 2}
   - {fileID: 11400000, guid: ad67e8e8f5b5d334a88828a4a8344441, type: 2}
   - {fileID: 11400000, guid: 6aefe092874b3ca488c8d7342217f526, type: 2}

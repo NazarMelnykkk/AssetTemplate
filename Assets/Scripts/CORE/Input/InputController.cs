@@ -3,12 +3,13 @@ using UnityEngine;
 
 public class InputController : MonoBehaviour
 {
-    public List<InputActionConfig> InputActions;
-    private Dictionary<CharacterAction, InputActionConfig> _actionDictionary;
+    [field: SerializeField] public List<InputActionConfigBase> InputActions {  get; private set; }
+
+    private Dictionary<CharacterAction, InputActionConfigBase> _actionDictionary;
 
     private void OnEnable()
     {
-        _actionDictionary = new Dictionary<CharacterAction, InputActionConfig>();
+        _actionDictionary = new Dictionary<CharacterAction, InputActionConfigBase>();
         foreach (var action in InputActions)
         {
             if (action is IInputAction inputAction)
@@ -36,7 +37,7 @@ public class InputController : MonoBehaviour
         _actionDictionary.Clear();
     }
 
-    public InputActionConfig GetActionByType(CharacterAction action)
+    public InputActionConfigBase GetActionByType(CharacterAction action)
     {
         _actionDictionary.TryGetValue(action, out var config);
         return config;

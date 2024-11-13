@@ -4,7 +4,7 @@ using UnityEngine.InputSystem;
 
 // make more ACTION variant
 [CreateAssetMenu(fileName = "InputAction", menuName = "InputAction/InputActionConfig")]
-public class InputActionConfig : ScriptableObject, IInputAction
+public class InputActionConfigBase : ScriptableObject, IInputAction
 {
     [field: SerializeField] public CharacterAction Action { get; private set; }
     [field: SerializeField] public InputActionReference InputReference { get; private set; }
