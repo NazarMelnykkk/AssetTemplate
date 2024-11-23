@@ -593,10 +593,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 282dba95b3e8e4e4c86fa3a54883b745, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  <PlayerInput>k__BackingField: {fileID: 543452610}
   <InputActions>k__BackingField:
   - {fileID: 11400000, guid: 2756e544769692743b2577e0fa2cb9dd, type: 2}
   - {fileID: 11400000, guid: ad67e8e8f5b5d334a88828a4a8344441, type: 2}
   - {fileID: 11400000, guid: 6aefe092874b3ca488c8d7342217f526, type: 2}
+  <inputMapConfigs>k__BackingField:
+  - {fileID: 11400000, guid: e598bc3328ea2364cb1563d34b69dd5b, type: 2}
+  - {fileID: 11400000, guid: 6e424288dc6668b4db02d609e9105de1, type: 2}
 --- !u!114 &543452610
 MonoBehaviour:
   m_ObjectHideFlags: 0
