@@ -2245,7 +2245,7 @@ PrefabInstance:
       objectReference: {fileID: 790183058}
     - target: {fileID: 2005212985874414670, guid: 4521ddf778814c546b4a53a64273e5d2, type: 3}
       propertyPath: m_text
-      value: Resume
+      value: RESUME
       objectReference: {fileID: 0}
     - target: {fileID: 2005212985874414670, guid: 4521ddf778814c546b4a53a64273e5d2, type: 3}
       propertyPath: m_fontSize
@@ -4333,7 +4333,9 @@ PrefabInstance:
       objectReference: {fileID: 1597569578}
     - target: {fileID: 2005212985874414670, guid: 4521ddf778814c546b4a53a64273e5d2, type: 3}
       propertyPath: m_text
-      value: Main Menu
+      value: 'MAIN MENU
+
+'
       objectReference: {fileID: 0}
     - target: {fileID: 2005212985874414670, guid: 4521ddf778814c546b4a53a64273e5d2, type: 3}
       propertyPath: m_fontSize
