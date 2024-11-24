@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bfd5de0774bc2af4abd52f6f231d9b58, type: 3}
-  m_Name: Interaction
+  m_Name: Menu_Character
   m_EditorClassIdentifier: 
-  <Action>k__BackingField: 0
-  <InputReference>k__BackingField: {fileID: -7516066260413236781, guid: b76082f6b64b41e49ae774dff7ff1e43, type: 3}
+  <Action>k__BackingField: 1
+  <InputReference>k__BackingField: {fileID: 5263963041714280671, guid: b76082f6b64b41e49ae774dff7ff1e43, type: 3}
