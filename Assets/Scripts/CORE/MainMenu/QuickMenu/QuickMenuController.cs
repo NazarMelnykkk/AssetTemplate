@@ -12,7 +12,6 @@ public class QuickMenuController : MonoBehaviour
         if (_config != null)
         {
             _config.OnPerformedEvent += ToggleQuickMenu;
-            _config.Initialize();
         }
     }
 
@@ -21,7 +20,6 @@ public class QuickMenuController : MonoBehaviour
         if (_config != null)
         {
             _config.OnPerformedEvent -= ToggleQuickMenu;
-            _config.Cleanup();
         }
     }
 

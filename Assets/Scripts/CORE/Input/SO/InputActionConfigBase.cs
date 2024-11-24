@@ -1,6 +1,7 @@
 using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using static UnityEngine.InputSystem.InputAction;
 
 // make more ACTION variant
 [CreateAssetMenu(fileName = "InputAction", menuName = "InputAction/InputActionConfig")]

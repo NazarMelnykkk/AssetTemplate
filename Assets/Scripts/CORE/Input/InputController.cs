@@ -91,10 +91,41 @@ public class InputController : MonoBehaviour
 
 
     //Test
+
+
     [ContextMenu("ChangeMapOnUI")]
     public void ChangeMapOnUI()
     {
         var type = InputMapType.UI;
+
+        if (!_mapDictionary.TryGetValue(type, out var config))
+        {
+            Debug.LogWarning($"InputMapConfig for {type} not found.");
+            return;
+        }
+
+        foreach (var map in PlayerInput.actions.actionMaps)
+        {
+            map.Disable();
+        }
+
+        var targetMap = PlayerInput.actions.FindActionMap(config.MapType.ToString(), true);
+
+        if (targetMap != null)
+        {
+            targetMap.Enable();
+            Debug.Log($"Activated Input Map: {config.MapType.ToString()}");
+        }
+        else
+        {
+            Debug.LogWarning($"InputActionMap with name {config.MapType.ToString()} not found.");
+        }
+    }
+
+    [ContextMenu("ChangeMapOnCharacter")]
+    public void ChangeMapOnCharacter()
+    {
+        var type = InputMapType.Character;
 
         if (!_mapDictionary.TryGetValue(type, out var config))
         {
