@@ -7,7 +7,7 @@ public class QuickMenuController : MonoBehaviour
 
     private void OnEnable()
     {
-        _config = References.Instance.InputController.GetActionByType(CharacterAction.Menu);
+        _config = GlobalReferencesContainer.Instance.InputController.GetActionByType(CharacterAction.Menu);
 
         if (_config != null)
         {

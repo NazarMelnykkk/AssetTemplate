@@ -1,8 +1,8 @@
 using UnityEngine;
 
-public class References : MonoBehaviour
+public class GlobalReferencesContainer : MonoBehaviour
 {
-    public static References Instance;
+    public static GlobalReferencesContainer Instance;
 
     [field: SerializeField] public DataPersistenceHandlerBase DataPersistenceHandlerBase { get; private set; }
     [field: SerializeField] public AudioHandler AudioHandler { get; private set; }

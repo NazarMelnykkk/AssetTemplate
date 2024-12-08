@@ -145,7 +145,7 @@ public class AudioHandler : MonoBehaviour, IDataPersistence
                 break;
         }
 
-        SaveByType(References.Instance.DataPersistenceHandlerBase.GameData, type, volume);
+        SaveByType(GlobalReferencesContainer.Instance.DataPersistenceHandlerBase.GameData, type, volume);
         VolumeValueChanged?.Invoke();
 
     }

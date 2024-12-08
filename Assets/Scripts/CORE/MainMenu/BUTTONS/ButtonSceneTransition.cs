@@ -8,12 +8,12 @@ public class ButtonSceneTransition : ButtonCustomBase
     {
         base.Click();
 
-        await References.Instance.SceneLoader.Transition(_sceneToTransition.SceneName, gameObject.scene.name);
+        await GlobalReferencesContainer.Instance.SceneLoader.Transition(_sceneToTransition.SceneName, gameObject.scene.name);
         PlaySound();
     }
 
     private void PlaySound()
     {
-        References.Instance.AudioHandler.PlaySound(SoundConstants.UICLICK_TYPE, SoundConstants.UICLICK);
+        GlobalReferencesContainer.Instance.AudioHandler.PlaySound(SoundConstants.UICLICK_TYPE, SoundConstants.UICLICK);
     }
 }

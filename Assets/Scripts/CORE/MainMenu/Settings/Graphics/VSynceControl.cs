@@ -30,6 +30,6 @@ public class VSynceControl : MonoBehaviour
 
     private void SetVSynce(int selectedVSynceIndex)
     {
-        References.Instance.GraphicsHandler.SetGraphicsSetting(GraphicType.VSync, selectedVSynceIndex, true);
+        GlobalReferencesContainer.Instance.GraphicsHandler.SetGraphicsSetting(GraphicType.VSync, selectedVSynceIndex, true);
     }
 }

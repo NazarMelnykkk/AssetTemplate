@@ -21,11 +21,11 @@ public class SettingControllerSound : SettingControllerBase
 
     private void SetVolume(SoundType soundType, float value) 
     {
-        References.Instance.AudioHandler.SetVolumeByType(soundType, value);       
+        GlobalReferencesContainer.Instance.AudioHandler.SetVolumeByType(soundType, value);       
     }
 
     public float GetVolume(SoundType soundType)
     {
-        return References.Instance.AudioHandler.GetVolumeByType(soundType);
+        return GlobalReferencesContainer.Instance.AudioHandler.GetVolumeByType(soundType);
     }
 }

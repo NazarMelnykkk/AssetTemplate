@@ -62,7 +62,7 @@ public class ResolutionControl : MonoBehaviour
 
     private void SetResolution(int selectedResolutionIndex)
     {
-        References.Instance.GraphicsHandler.SetGraphicsSetting(GraphicType.Resolution, selectedResolutionIndex, true);
+        GlobalReferencesContainer.Instance.GraphicsHandler.SetGraphicsSetting(GraphicType.Resolution, selectedResolutionIndex, true);
      
     }
 }

@@ -7,21 +7,21 @@ public class ObjectSoundController : MonoBehaviour
 
     public void PlaySound(SoundConfig soundConfig)
     {
-        References.Instance.AudioHandler.PlaySound(soundConfig, _audioSource);
+        GlobalReferencesContainer.Instance.AudioHandler.PlaySound(soundConfig, _audioSource);
     }
 
     private void OnEnable()
     {
-        References.Instance.AudioHandler.VolumeValueChanged += ChangeSoundVolume;
+        GlobalReferencesContainer.Instance.AudioHandler.VolumeValueChanged += ChangeSoundVolume;
     }
 
     private void OnDisable()
     {
-        References.Instance.AudioHandler.VolumeValueChanged -= ChangeSoundVolume;
+        GlobalReferencesContainer.Instance.AudioHandler.VolumeValueChanged -= ChangeSoundVolume;
     }
 
     private void ChangeSoundVolume()
     {
-        _audioSource.volume = References.Instance.AudioHandler.GetVolumeByType(_type);
+        _audioSource.volume = GlobalReferencesContainer.Instance.AudioHandler.GetVolumeByType(_type);
     }
 }

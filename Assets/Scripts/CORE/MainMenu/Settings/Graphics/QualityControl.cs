@@ -39,7 +39,7 @@ public class QualityControl : MonoBehaviour
 
     private void SetQuality(int selectedQualityIndex)
     {
-        References.Instance.GraphicsHandler.SetGraphicsSetting(GraphicType.QualityLevel, selectedQualityIndex, true);
+        GlobalReferencesContainer.Instance.GraphicsHandler.SetGraphicsSetting(GraphicType.QualityLevel, selectedQualityIndex, true);
     }
 }
 

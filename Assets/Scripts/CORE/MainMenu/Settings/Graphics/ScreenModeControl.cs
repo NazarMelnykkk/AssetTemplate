@@ -29,6 +29,6 @@ public class ScreenModeControl : MonoBehaviour
 
     private void SetScreenMode(int selectedScreenModeIndex)
     {
-        References.Instance.GraphicsHandler.SetGraphicsSetting(GraphicType.ScreenMode, selectedScreenModeIndex, true);
+        GlobalReferencesContainer.Instance.GraphicsHandler.SetGraphicsSetting(GraphicType.ScreenMode, selectedScreenModeIndex, true);
     }
 }

@@ -45,7 +45,7 @@ public class GraphicsHandler : MonoBehaviour, IDataPersistence
 
     public void SetGraphicsSetting(GraphicType type, int value , bool toSave = false)
     {
-        GameData data = References.Instance.DataPersistenceHandlerBase.GameData;
+        GameData data = GlobalReferencesContainer.Instance.DataPersistenceHandlerBase.GameData;
         GraphicsData graphicsData = data.SettingData.GraphicData;
 
         switch (type)
